@@ -1,30 +1,36 @@
 # Fitness App Backend
 
-Este é o backend para o aplicativo Fitness App, desenvolvido para ajudar os usuários a gerenciar suas rotinas de exercícios, dietas e acompanhar seu progresso físico ao longo do tempo.
+Este é o backend para o aplicativo Fitness App, desenvolvido para gerenciar rotinas de exercícios, dietas e acompanhar o progresso físico dos usuários. A aplicação utiliza o framework Hono.js, focado em alta performance e baixa latência.
 
-## Tecnologias Usadas
+## Tecnologias Utilizadas
 
-- **[Hono](https://hono.dev/)**: Framework web rápido e moderno para Node.js.
-- **[Supabase](https://supabase.io/)**: Plataforma de backend como serviço (BaaS) para banco de dados e autenticação.
-- **[Node.js](https://nodejs.org/)**: Ambiente de execução JavaScript.
-- **[bcryptjs](https://www.npmjs.com/package/bcryptjs)**: Biblioteca para criptografia de senhas.
-- **[dotenv](https://www.npmjs.com/package/dotenv)**: Gerenciamento de variáveis de ambiente.
-- **[nodemon](https://nodemon.io/)**: Ferramenta para reiniciar automaticamente o servidor durante o desenvolvimento.
+O projeto foi construído utilizando as seguintes tecnologias e bibliotecas:
+
+* **Hono.js**: Framework web de alta performance.
+* **Supabase**: Banco de dados e autenticação baseada em PostgreSQL.
+* **JSON Web Token (JWT)**: Implementação de segurança para autenticação de rotas.
+* **Bcrypt.js**: Criptografia de senhas para armazenamento seguro.
+* **Node-cron**: Agendamento de tarefas automáticas no servidor.
+* **Nodemailer**: Serviço de envio de e-mails transacionais.
+* **Dotenv**: Gerenciamento de variáveis de ambiente.
 
 ## Funcionalidades
 
-- **Autenticação de Usuários**:
-  - Registro e login de usuários com criptografia de senha.
-  - Geração de tokens JWT para autenticação segura.
+* Autenticação de usuários com criptografia de ponta a ponta.
+* CRUD completo para gestão de treinos e rotinas alimentares.
+* Sistema de monitoramento de métricas físicas e progresso.
+* Automação de tarefas e notificações via cron jobs.
+* Integração com serviço de e-mail para suporte ao usuário.
 
-- **Rotinas de Exercícios**:
-  - Criação e gerenciamento de rotinas de exercícios.
-  - Listagem de rotinas por usuário.
+## Configuração do Projeto
 
-- **Exercícios Realizados**:
-  - Registro de exercícios realizados ou não realizados.
-  
+### Pré-requisitos
+* Node.js v18 ou superior.
+* Instância ativa no Supabase.
 
-- **Acompanhamento de Progresso**:
-  - Registro de progresso físico (peso, medidas, etc.).
-# back-fit-ness-app-hono-js
+### Instalação
+
+1. Clone o repositório:
+   ```bash
+   git clone [https://github.com/JosePedro1/back-fit-ness-app-hono-js.git](https://github.com/JosePedro1/back-fit-ness-app-hono-js.git)
+   cd back-fit-ness-app-hono-js
